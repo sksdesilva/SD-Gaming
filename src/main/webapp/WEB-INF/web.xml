@@ -1,0 +1,95 @@
+<web-app
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns="http://java.sun.com/xml/ns/javaee" 
+ xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+ <display-name>RegistrationMVC</display-name>
+ <welcome-file-list>
+ <welcome-file>welcomeSD.html</welcome-file>
+ </welcome-file-list>
+ <servlet>
+ <description></description>
+ <display-name>RegisterServlet</display-name>
+ <servlet-name>RegisterServlet</servlet-name>
+ <servlet-class>com.mvc.controller.RegisterServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>RegisterServlet</servlet-name>
+ <url-pattern>/RegisterServlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>log</servlet-name>
+ <servlet-class>com.mvc.controller.userlogin</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>log</servlet-name>
+ <url-pattern>/log</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>updateCus</servlet-name>
+ <servlet-class>com.mvc.controller.customerUpdate</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>updateCus</servlet-name>
+ <url-pattern>/updateCustomer</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>deleteUser</servlet-name>
+ <servlet-class>com.mvc.controller.deleteuser</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>deleteUser</servlet-name>
+ <url-pattern>/dduser1</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>DeveloperReg</servlet-name>
+ <servlet-class>com.mvc.controller.DevRegisterServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>DeveloperReg</servlet-name>
+ <url-pattern>/DevRegisterServlet</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+ <servlet-name>Developerlog</servlet-name>
+ <servlet-class>com.mvc.controller.developerlog</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>Developerlog</servlet-name>
+ <url-pattern>/Dlog</url-pattern>
+ </servlet-mapping>
+ 
+   <servlet>
+ <servlet-name>customerReview</servlet-name>
+ <servlet-class>com.mvc.controller.cusReview</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>customerReview</servlet-name>
+ <url-pattern>/review</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+ <servlet-name>viewReview</servlet-name>
+ <servlet-class>com.mvc.controller.viewreviw</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>viewReview</servlet-name>
+ <url-pattern>/reviewview</url-pattern>
+ </servlet-mapping>
+ 
+   <servlet>
+ <servlet-name>DReview</servlet-name>
+ <servlet-class>com.mvc.controller.deleteRe</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>DReview</servlet-name>
+ <url-pattern>/deleteR</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+</web-app>
